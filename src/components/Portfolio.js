@@ -1,44 +1,56 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import node_backend from "../assets/portfolio/arrayDestruct.jpg";
+import react_blog_app from "../assets/portfolio/react-blog-app.jpg";
+import youtube_clone from "../assets/portfolio/youtube-clone.png";
+import landing_page from "../assets/portfolio/landing-page.png";
+import my_portfolio from "../assets/portfolio/my-portfolio.png";
+import stripe from "../assets/portfolio/stripe.jpg";
 
 const portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
-      title: "complete backend for mobile application",
+      src: my_portfolio,
+      title: "portfolio website in React and tailwindcss",
+      code: "https://github.com/Amjad-Afridi/portfolio-website-react-tailwindcss",
+      demo: "https://imaginative-biscochitos-57ca4a.netlify.app/",
     },
     {
       id: 2,
-      src: reactParallax,
-
-      title: "blog app in React.js",
+      src: landing_page,
+      title: "landing page frontend in tailwindcss",
+      code: "https://github.com/Amjad-Afridi/landing-page-with-tailwindcss",
+      demo: "https://landing-page-with-tailwind.netlify.app",
     },
+
     {
       id: 3,
-      src: navbar,
-
+      src: youtube_clone,
       title: "youtube clone in HTML and CSS",
+      code: "https://github.com/Amjad-Afridi/Youtube-clone-HTML-CSS.github.io",
+      demo: "https://amjad-afridi.github.io/Youtube-clone-HTML-CSS.github.io/",
     },
     {
       id: 4,
-      src: reactSmooth,
-      title: "landing page frontend in tailwindcss ",
+      src: react_blog_app,
+      title: "blog app in React.js",
+      code: "https://github.com/Amjad-Afridi/blog-web-app-in-React",
+      demo: null,
     },
     {
       id: 5,
-      src: installNode,
-      title: "portfolio website in React and tailwindcss",
+      src: node_backend,
+      title: "complete backend for mobile application",
+      code: "https://github.com/Amjad-Afridi/dressUp-backend",
+      demo: null,
     },
+
     {
       id: 6,
-      src: reactWeather,
+      src: stripe,
       title: "stripe implementation in node.js",
+      code: "https://github.com/Amjad-Afridi/Payments-with-Stripe-using-node-js",
+      demo: null,
     },
   ];
 
@@ -57,7 +69,7 @@ const portfolio = () => {
 
         {/* grid of cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {portfolios.map(({ id, src, title }) => (
+          {portfolios.map(({ id, src, title, demo, code }) => (
             <div
               key={id}
               className="flex flex-col gap-4 rounded-lg border border-gray-400 border-t-0 shadow-md shadow-gray-400  "
@@ -68,12 +80,16 @@ const portfolio = () => {
                 className="rounded-lg hover:scale-105 duration-300"
               />
               <div className=" flex items-center justify-evenly px-2 py-3">
-                <button className="mx-auto text-gray-400 text-lg hover:scale-105 duration-300">
-                  Demo
-                </button>
-                <button className=" text-gray-400 mx-auto text-lg hover:scale-105 duration-300">
-                  Code
-                </button>
+                <a href={demo} target="_blank" rel="noopener noreferrer">
+                  <button className="mx-auto text-gray-400 text-lg hover:scale-105 duration-300">
+                    Demo
+                  </button>
+                </a>
+                <a href={code} target="_blank" rel="noopener noreferrer">
+                  <button className="mx-auto text-gray-400 text-lg hover:scale-105 duration-300">
+                    Code
+                  </button>
+                </a>
               </div>
               <div className="flex border-t-2 border-gray-400  px-4 py-4">
                 <div className="flex justify-center mx-auto text-gray-400">

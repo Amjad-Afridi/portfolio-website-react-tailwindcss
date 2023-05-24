@@ -1,5 +1,4 @@
 import React from "react";
-
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -7,6 +6,8 @@ import reactImage from "../assets/react.png";
 import node from "../assets/node.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import express from "../assets/express new.png";
+import mongodb from "../assets/mongodb.png";
 const Experience = () => {
   const skills = [
     {
@@ -46,10 +47,22 @@ const Experience = () => {
       style: "shadow-green-500",
     },
     {
-      id: 8,
+      id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id: 8,
+      src: express,
+      title: "Express js",
+      style: "shadow-white",
+    },
+    {
+      id: 9,
+      src: mongodb,
+      title: "Mongodb",
+      style: "shadow-green",
     },
   ];
   return (
@@ -71,14 +84,14 @@ const Experience = () => {
             <div
               key={id}
               className={
-                "flex flex-col gap-4 rounded-lg border  border-t-0 shadow-md " +
+                "flex flex-col items-center gap-4 rounded-lg border  border-t-0 shadow-md " +
                 style
               }
             >
               <img
                 src={src}
                 alt=""
-                className="rounded-lg hover:scale-105 duration-300 w-32 mx-auto"
+                className="rounded-lg hover:scale-105 duration-300 w-32 h-32 mx-auto"
               />
               <div className="flex justify-center items-center">
                 <button className="text-gray-400 text-lg py-4 hover:scale-105 duration-300">
