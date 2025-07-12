@@ -1,4 +1,3 @@
-import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import profileimage from "../assets/profile-picture.jpg";
 import { Link } from "react-scroll";
@@ -11,16 +10,10 @@ const Home = () => {
           {/* description and button */}
           <div className="flex flex-col pr-4 gap-4">
             <h2 className="text-white font-bold text-5xl capitalize mb-4  ">
-              I am a full stack web developer
+              I am a FullStack Web Developer
             </h2>
             <p className="text-gray-400 mb-4 md:max-w-sm">
-              I am a recent computer science graduate. I have completed my
-              degree from Sukkur IBA university. I have expertise in full stack
-              web development using MERN Stack. I have developed several
-              projects in HTML, CSS, Tailwindcss, React.js , Node.js,
-              Express.js, and MongoDB. I am actively looking for new
-              opportunites and challanges in this domain in order to enhance my
-              skills.
+              I'm a Computer Science graduate with ~2 years of experience in full-stack development using React.js, Node.js, and Express. I've built end-to-end web applications and tackled challenges in UI design, APIs, and data modeling. I enjoy solving real-world problems and growing with collaborative, forward-thinking teams.
             </p>
             {/* button div */}
             <div className="flex mb-8">
